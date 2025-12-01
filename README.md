@@ -17,6 +17,16 @@ JobRise Africa offers curated job listings sourced from company websites. Users 
 * Deployment with separate frontend and backend infrastructure.
 * “Non-Commercial Use Only” license requirement for public usage.
 
+## Preview
+
+![JobHub KE Homepage](docs/images/preview_1.png)
+
+---
+![Job Detail Page](docs/images/preview_2.png)
+---
+![Featured Jobs](docs/images/preview_3.png)
+
+
 ## Architecture
 
 JobRise Africa is built using a modular, modern architecture:

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JobHub KE Homepage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Poppins:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1b6f64",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#131f1e",
+                        "accent": "#E87722"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "heading": ["Poppins", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="w-full bg-primary text-white dark:bg-[#1B6E63] sticky top-0 z-50 shadow-md">
+<div class="container mx-auto flex items-center justify-between whitespace-nowrap px-6 py-3">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clippath id="clip0_6_330">
+<rect fill="white" height="48" width="48"></rect>
+</clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em] font-heading">JobHub KE</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-white hover:text-white/80 text-sm font-medium leading-normal transition-colors" href="#">Jobs</a>
+<a class="text-white hover:text-white/80 text-sm font-medium leading-normal transition-colors" href="#">Internships</a>
+<a class="text-white hover:text-white/80 text-sm font-medium leading-normal transition-colors" href="#">Scholarships</a>
+<a class="text-white hover:text-white/80 text-sm font-medium leading-normal transition-colors" href="#">Explore</a>
+<a class="text-white hover:text-white/80 text-sm font-medium leading-normal transition-colors" href="#">About</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-white text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-white/90 transition-colors">
+<span class="truncate">Sign In</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- HeroSection -->
+<section class="bg-white dark:bg-background-dark/50 py-16 md:py-20">
+<div class="container mx-auto px-6 text-center">
+<div class="max-w-3xl mx-auto flex flex-col gap-6">
+<div class="flex flex-col gap-2">
+<h1 class="text-[#121716] dark:text-white text-4xl md:text-5xl font-black font-heading leading-tight tracking-tight">Find Your Next Opportunity in Kenya</h1>
+<h2 class="text-gray-600 dark:text-gray-300 text-base md:text-lg font-normal leading-normal">Discover thousands of jobs, internships, and scholarships from top companies in Kenya.</h2>
+</div>
+<div class="mt-4 p-4 bg-white dark:bg-gray-800/50 rounded-xl shadow-lg flex flex-col md:flex-row items-stretch gap-2">
+<label class="flex-1 flex flex-col w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-gray-500 dark:text-gray-400 flex bg-background-light dark:bg-gray-700 items-center justify-center pl-4 rounded-l-lg">
+<span class="material-symbols-outlined text-lg">work</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-[#121716] dark:text-gray-100 focus:outline-0 focus:ring-0 border-none bg-background-light dark:bg-gray-700 h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-3 pl-2 text-base font-normal leading-normal" placeholder="What role are you looking for?" value=""/>
+</div>
+</label>
+<label class="flex-1 flex flex-col w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-gray-500 dark:text-gray-400 flex bg-background-light dark:bg-gray-700 items-center justify-center pl-4 rounded-l-lg">
+<span class="material-symbols-outlined text-lg">location_on</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-[#121716] dark:text-gray-100 focus:outline-0 focus:ring-0 border-none bg-background-light dark:bg-gray-700 h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-3 pl-2 text-base font-normal leading-normal" placeholder="Location (e.g., Nairobi)" value=""/>
+</div>
+</label>
+<button class="flex min-w-[120px] max-w-full md:max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-accent hover:bg-accent/90 text-white text-base font-bold leading-normal tracking-[0.015em] transition-colors">
+<span class="truncate">Search</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content Area -->
+<div class="container mx-auto px-6 py-10">
+<!-- SectionHeader -->
+<h2 class="text-[#121716] dark:text-white text-2xl md:text-3xl font-bold font-heading leading-tight tracking-[-0.015em] pb-6">Featured Jobs</h2>
+<!-- Job Listings Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Job Card 1 -->
+<div class="flex flex-col bg-white dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700/50 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="flex justify-between items-start mb-3">
+<div>
+<h3 class="text-lg font-bold text-primary dark:text-teal-400 font-heading">Senior Product Designer</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm font-medium">Safaricom PLC - <span class="font-normal text-gray-500 dark:text-gray-400">Nairobi, Kenya</span></p>
+</div>
+<button class="text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-teal-400 transition-colors">
+<span class="material-symbols-outlined">bookmark_border</span>
+</button>
+</div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="text-xs font-semibold px-2.5 py-1 bg-primary/10 text-primary dark:bg-teal-900/50 dark:text-teal-300 rounded-full">Full-time</span>
+<span class="text-xs font-semibold px-2.5 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-300 rounded-full">Design</span>
+<span class="text-xs font-semibold px-2.5 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-300 rounded-full">Senior</span>
+</div>
+<div class="mt-auto border-t border-gray-100 dark:border-gray-700/50 pt-3 flex justify-between items-center text-xs text-gray-500 dark:text-gray-400">
+<span>Posted: 2 days ago</span>
+<span>Deadline: 15 Oct 2024</span>
+</div>
+</div>
+<!-- Job Card 2 -->
+<div class="flex flex-col bg-white dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700/50 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="flex justify-between items-start mb-3">
+<div>
+<h3 class="text-lg font-bold text-primary dark:text-teal-400 font-heading">Lead Software Engineer</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm font-medium">M-KOPA Solar - <span class="font-normal text-gray-500 dark:text-gray-400">Nairobi, Kenya</span></p>
+</div>
+<button class="text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-teal-400 transition-colors">
+<span class="material-symbols-outlined">bookmark_border</span>
+</button>
+</div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="text-xs font-semibold px-2.5 py-1 bg-primary/10 text-primary dark:bg-teal-900/50 dark:text-teal-300 rounded-full">Full-time</span>
+<span class="text-xs font-semibold px-2.5 py-1 bg-yellow-100 dark:bg-yellow-900/50 text-yellow-800 dark:text-yellow-300 rounded-full">Remote</span>
+<span class="text-xs font-semibold px-2.5 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-300 rounded-full">Engineering</span>
+</div>
+<div class="mt-auto border-t border-gray-100 dark:border-gray-700/50 pt-3 flex justify-between items-center text-xs text-gray-500 dark:text-gray-400">
+<span>Posted: 3 days ago</span>
+<span>Deadline: 22 Oct 2024</span>
+</div>
+</div>
+<!-- Job Card 3 -->
+<div class="flex flex-col bg-white dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700/50 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="flex justify-between items-start mb-3">
+<div>
+<h3 class="text-lg font-bold text-primary dark:text-teal-400 font-heading">Digital Marketing Manager</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm font-medium">Jumia Kenya - <span class="font-normal text-gray-500 dark:text-gray-400">Nairobi, Kenya</span></p>
+</div>
+<button class="text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-teal-400 transition-colors">
+<span class="material-symbols-outlined">bookmark_border</span>
+</button>
+</div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="text-xs font-semibold px-2.5 py-1 bg-primary/10 text-primary dark:bg-teal-900/50 dark:text-teal-300 rounded-full">Full-time</span>
+<span class="text-xs font-semibold px-2.5 py-1 bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-300 rounded-full">Marketing</span>
+</div>
+<div class="mt-auto border-t border-gray-100 dark:border-gray-700/50 pt-3 flex justify-between items-center text-xs text-gray-500 dark:text-gray-400">
+<span>Posted: 4 days ago</span>
+<span>Deadline: 18 Oct 2024</span>
+</div>
+</div>
+<!-- Job Card 4 -->
+<div class="flex flex-col bg-white dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700/50 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="flex justify-between items-start mb-3">
+<div>
+<h3 class="text-lg font-bold text-primary dark:text-teal-400 font-heading">Data Scientist</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm font-medium">Cellulant - <span class="font-normal text-gray-500 dark:text-gray-400">Nairobi, Kenya</span></p>
+</div>
+<button class="text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-teal-400 transition-colors">
+<span class="material-symbols-outlined">bookmark_border</span>
+</button>
+</div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="text-xs font-semibold px-2.5 py-1 bg-primary/10 text-primary dark:bg-teal-900/50 dark:text-teal-300 rounded-full">Full-time</span>
+<span class="text-xs font-semibold px-2.5 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-300 rounded-full">Data Science</span>
+</div>
+<div class="mt-auto border-t border-gray-100 dark:border-gray-700/50 pt-3 flex justify-between items-center text-xs text-gray-500 dark:text-gray-400">
+<span>Posted: 5 days ago</span>
+<span>Deadline: 30 Oct 2024</span>
+</div>
+</div>
+<!-- Job Card 5 -->
+<div class="flex flex-col bg-white dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700/50 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="flex justify-between items-start mb-3">
+<div>
+<h3 class="text-lg font-bold text-primary dark:text-teal-400 font-heading">Human Resources Officer</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm font-medium">KCB Group - <span class="font-normal text-gray-500 dark:text-gray-400">Nairobi, Kenya</span></p>
+</div>
+<button class="text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-teal-400 transition-colors">
+<span class="material-symbols-outlined">bookmark_border</span>
+</button>
+</div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="text-xs font-semibold px-2.5 py-1 bg-pink-100 dark:bg-pink-900/50 text-pink-800 dark:text-pink-300 rounded-full">Internship</span>
+<span class="text-xs font-semibold px-2.5 py-1 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-800 dark:text-indigo-300 rounded-full">HR</span>
+</div>
+<div class="mt-auto border-t border-gray-100 dark:border-gray-700/50 pt-3 flex justify-between items-center text-xs text-gray-500 dark:text-gray-400">
+<span>Posted: 1 week ago</span>
+<span>Deadline: 12 Nov 2024</span>
+</div>
+</div>
+<!-- Job Card 6 -->
+<div class="flex flex-col bg-white dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700/50 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="flex justify-between items-start mb-3">
+<div>
+<h3 class="text-lg font-bold text-primary dark:text-teal-400 font-heading">Financial Analyst</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm font-medium">Equity Bank - <span class="font-normal text-gray-500 dark:text-gray-400">Nairobi, Kenya</span></p>
+</div>
+<button class="text-gray-400 dark:text-gray-500 hover:text-primary dark:hover:text-teal-400 transition-colors">
+<span class="material-symbols-outlined">bookmark_border</span>
+</button>
+</div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="text-xs font-semibold px-2.5 py-1 bg-primary/10 text-primary dark:bg-teal-900/50 dark:text-teal-300 rounded-full">Full-time</span>
+<span class="text-xs font-semibold px-2.5 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded-full">Finance</span>
+</div>
+<div class="mt-auto border-t border-gray-100 dark:border-gray-700/50 pt-3 flex justify-between items-center text-xs text-gray-500 dark:text-gray-400">
+<span>Posted: 1 week ago</span>
+<span>Deadline: 05 Nov 2024</span>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="flex items-center justify-center pt-10">
+<a class="flex size-10 items-center justify-center text-[#121716] dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">chevron_left</span>
+</a>
+<a class="text-sm font-bold leading-normal tracking-[0.015em] flex size-10 items-center justify-center text-white bg-primary rounded-full mx-1" href="#">1</a>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-[#121716] dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full mx-1 transition-colors" href="#">2</a>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-[#121716] dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full mx-1 transition-colors" href="#">3</a>
+<span class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-[#121716] dark:text-gray-300 rounded-full mx-1">...</span>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-[#121716] dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full mx-1 transition-colors" href="#">10</a>
+<a class="flex size-10 items-center justify-center text-[#121716] dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">chevron_right</span>
+</a>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-gray-800/50 border-t border-gray-200 dark:border-gray-700/50 mt-12">
+<div class="container mx-auto px-6 py-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<h3 class="text-lg font-bold text-primary dark:text-teal-400 font-heading">JobHub KE</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Your gateway to career opportunities in Kenya.</p>
+</div>
+<div>
+<h4 class="font-bold text-[#121716] dark:text-white">For Job Seekers</h4>
+<ul class="mt-4 space-y-2 text-sm">
+<li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-teal-400" href="#">Browse Jobs</a></li>
+<li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-teal-400" href="#">Candidate Login</a></li>
+<li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-teal-400" href="#">Career Advice</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-[#121716] dark:text-white">For Employers</h4>
+<ul class="mt-4 space-y-2 text-sm">
+<li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-teal-400" href="#">Post a Job</a></li>
+<li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-teal-400" href="#">Employer Login</a></li>
+<li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-teal-400" href="#">Pricing</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-[#121716] dark:text-white">Company</h4>
+<ul class="mt-4 space-y-2 text-sm">
+<li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-teal-400" href="#">About Us</a></li>
+<li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-teal-400" href="#">Contact Us</a></li>
+<li><a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-teal-400" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-8 border-t border-gray-200 dark:border-gray-700/50 pt-6 text-center text-sm text-gray-500 dark:text-gray-400">
+<p>© 2024 JobHub KE. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
